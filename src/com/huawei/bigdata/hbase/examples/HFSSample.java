@@ -10,11 +10,6 @@
  */
 package com.huawei.bigdata.hbase.examples;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
@@ -23,14 +18,13 @@ import org.apache.hadoop.hbase.TableName;
 import org.apache.hadoop.hbase.client.Admin;
 import org.apache.hadoop.hbase.client.Connection;
 import org.apache.hadoop.hbase.client.ConnectionFactory;
-import org.apache.hadoop.hbase.filestream.client.FSFile;
-import org.apache.hadoop.hbase.filestream.client.FSGet;
-import org.apache.hadoop.hbase.filestream.client.FSHColumnDescriptor;
-import org.apache.hadoop.hbase.filestream.client.FSPut;
-import org.apache.hadoop.hbase.filestream.client.FSResult;
-import org.apache.hadoop.hbase.filestream.client.FSTable;
-import org.apache.hadoop.hbase.filestream.client.FSTableDescriptor;
+import org.apache.hadoop.hbase.filestream.client.*;
 import org.apache.hadoop.hbase.util.Bytes;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 public class HFSSample {
   public static final Log LOG = LogFactory.getLog(HFSSample.class);
